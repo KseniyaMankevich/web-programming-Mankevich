@@ -1,0 +1,185 @@
+body {
+  color: #8f8f8f;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#E6E6FA;
+}
+.wrapper {
+	max-width: 960px;
+	margin: auto;
+}
+
+.header {
+background:#E6E6FA;
+border-bottom:5px solid #D8BFD8;
+border-top:5px solid #D8BFD8;
+}
+.logo{
+  text-align: center;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.menu{
+display: inline;
+}
+.menu li{ 
+display: inline-block;
+padding: 20px 20px;
+margin:0 5px;
+}
+.menu li a{ 
+color:#8B4513;
+font-size: 20px;
+}
+.drop_downMenu{
+background-color: #D8BFD8;
+display: none;
+position: absolute;
+top:60px;
+left:100px;
+transition: 2s;
+}
+.drop_downMenu li{
+display: block;
+}
+.drop_downMenu li a{
+color:#8B4513;
+}
+.frDrop:hover ul{
+display: block;
+}
+.container1
+{
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  background:#d8bfd8fa;
+  border: 1px solid #7e7e7e;
+}
+
+.box1
+{
+  background:#d8bfd8fa;
+  color: #8b4513;
+  font-size: 18px;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+}
+.logo1{
+  width: 60%;
+}
+section { 
+ padding: 10px; 
+ font-size: 35px;
+ font-style: italic;
+ color:#800000;
+ border-bottom: 1px solid #7e7e7e;
+}
+
+ .im2 { 
+ float: left;
+ margin-right: 30px;
+ width: 30%;
+ border-radius: 70%;
+ }
+ 
+ .im3{
+  float: right;
+  width: 30%;
+  border-radius: 70%;
+ }
+
+.clearfix { 
+ clear: both;
+ }
+
+blockquote {
+  margin:0; 
+  background:#d8bfd847;
+  padding: 10px 20px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+h1{
+  color:#9400d37d;
+  text-align: center;
+}
+
+blockquote p {
+  color:#9400d36e;
+  font-style: italic;
+  font-size: 34px;
+  margin: 0;
+}
+.pic{
+  margin:5px;
+}
+.main1{
+width:30%;
+border-radius: 25%;
+padding:20px;
+}
+
+.price {
+list-style: none;
+font-family: 'Marck Script', cursive;
+}
+.price li {
+margin-bottom: 10px;
+border-bottom: 2px #404B51 dotted;
+font-size: 40px;
+}
+.price li span:nth-child(odd) {
+padding-right: 6px; 
+color: black;
+}
+.price li span:nth-child(even) {
+float: right; 
+padding-left: 6px;
+color: black;
+}
+.price span {
+background:#d8bfd5;
+position: relative;
+bottom: -7px;
+}
+.main1:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+
+@media screen and (max-width: 480px){
+  .box1
+{
+  font-size: 13px;
+}
+.menu li{ 
+padding: 0;
+}
+.drop_downMenu{
+top:30px;
+left:60px;
+}
+section { 
+ font-size: 20px;
+  }
+blockquote p {
+  font-size: 25px;
+}
+.main1{
+padding:4px;
+}
+.price li {
+font-size: 20px;
+}
+.price {
+margin-right: 20px;
+}
+}
