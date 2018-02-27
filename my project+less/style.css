@@ -114,10 +114,10 @@ blockquote cite {
 blockquote:hover {
   background: #A52A2A;
 }
-.vybor {
+.pic1 {
   width: 70%;
 }
-.vybor:hover {
+.pic1:hover {
   transform: scale(1.5);
   border-radius: 70%;
   transition: transform 1s ;
@@ -130,10 +130,10 @@ blockquote:hover {
   border-radius: 70%;
   transition: transform 1s ;
 }
-.vybor1 {
+.pic2 {
   width: 50%;
 }
-.vybor1:hover {
+.pic2:hover {
   transform: scale(1.5);
   border-radius: 70%;
   transition: transform 1s ;
@@ -163,18 +163,18 @@ blockquote:hover {
   border-radius: 70%;
   transition: transform 1s ;
 }
-.napit {
+.drink {
   width: 40%;
 }
-.napit:hover {
+.drink:hover {
   transform: scale(1.5);
   border-radius: 70%;
   transition: transform 1s ;
 }
-.napit1 {
+.drink1 {
   width: 50%;
 }
-.napit1:hover {
+.drink1:hover {
   transform: scale(1.5);
   border-radius: 70%;
   transition: transform 1s;
@@ -328,7 +328,7 @@ section {
   .menu a {
     font: bold 15px/50px sans-serif;
   }
-  .napit {
+  .drink {
     width: 50%;
   }
   .column:nth-child(1) {
@@ -340,10 +340,10 @@ section {
   .column:nth-child(3) {
     font-size: 13px;
   }
-  .vybor1 {
+  .pic1 {
     width: 100%;
   }
-  .vybor {
+  .pic1 {
     width: 100%;
   }
   .main {
@@ -352,10 +352,10 @@ section {
   .coffee {
     width: 80%;
   }
-  .napit {
+  .drink {
     width: 100%;
   }
-  .napit1 {
+  .drink1 {
     width: 100%;
   }
   .rest1 {

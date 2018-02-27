@@ -6,8 +6,8 @@ body {
   background-color: #FFEBCD;
 }
 .wrapper {
-	max-width: 960px;
-	margin: auto;
+  max-width: 960px;
+  margin: auto;
 }
 .header {
 background: #FFEBCD;
@@ -16,10 +16,10 @@ border-top:5px solid #DEB887;
 }
 
 .pic{
-	text-align: center;
+  text-align: center;
 }
 .logotip{
-	width:20%;
+  width:20%;
 }
 .menu{
 display: inline;
@@ -73,52 +73,52 @@ display: block;
   width: 60%;
 }
 blockquote {
-	margin:8px 0px; 
-	background: #DEB887;
-	padding: 10px 20px;
-	font-family: 'Oswald', sans-serif;
-	text-align: center;
+  margin:8px 0px; 
+  background: #DEB887;
+  padding: 10px 20px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
 }
 
 blockquote p {
-	color:#800000;
-	font-style: italic;
-	font-size: 34px;
-	margin: 0;
+  color:#800000;
+  font-style: italic;
+  font-size: 34px;
+  margin: 0;
 }
 
 blockquote cite {
-	display: block;
-	font-size: 30px;
-	color: #800000;
-	text-align: right;
+  display: block;
+  font-size: 30px;
+  color: #800000;
+  text-align: right;
 }
 
 h1{
-	text-align: center;
-	font-size: 60px;
-	color:#8B4513;
-	font-family: Andale Mono, monospace;
+  text-align: center;
+  font-size: 60px;
+  color:#8B4513;
+  font-family: Andale Mono, monospace;
 }
 h2{
-	font:35px "Bonveno", "Century Gothic";
-	color: #A52A2A;
+  font:35px "Bonveno", "Century Gothic";
+  color: #A52A2A;
 
 }
 .main-img1,.main-img2,.main-img3,.main-img4{
-	text-align:center;
-	padding: 30px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	border-bottom: 5px solid #DEB887;
+  text-align:center;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 5px solid #DEB887;
 }
 
 .main-img1 img,.main-img2 img,.main-img3 img,.main-img4 img{
-	padding: 20px 25px;
-	width:300px;
-	height: 300px;
-	border-radius: 20%;
+  padding: 20px 25px;
+  width:300px;
+  height: 300px;
+  border-radius: 20%;
 }
 .main-img1 img:hover
 {
@@ -148,13 +148,13 @@ h2{
 
 @media screen and (max-width: 480px){
  .logotip{
-	width:40%;
+  width:40%;
 }
 .menu li{ 
 padding: 0;
 }
 h1{
-	font-size: 40px;
+  font-size: 40px;
 }
 blockquote cite {
   font-size: 10px;
@@ -178,10 +178,10 @@ blockquote p {
 
 }
 .main-img1,.main-img2,.main-img3,.main-img4{
-	display: table;
+  display: table;
 }
 .main-img1 img,.main-img2 img,.main-img3 img,.main-img4 img{
-	width:260px;
+  width:260px;
 }
 .drop_downMenu{
 top:30px;
