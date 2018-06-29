@@ -1,0 +1,50 @@
+body {
+  color: #4B0082;
+  background: #E6E6FA;
+}
+.error404 {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Times New Roman;
+}
+.error404 h1 {
+  font-size: 40px;
+  margin-left: 55px;
+}
+.error404 a {
+  font-size: 30px;
+  color: #4B0082;
+}
+.error404 a:hover {
+  color: #DA70D6;
+}
+.mainlogo {
+  width: 200px;
+}
+.mainpic {
+  width: 600px;
+}
+@media screen and (max-width: 480px) {
+  .error404 {
+    width: 350px;
+  }
+  .error404 h1 {
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .error404 a {
+    font-size: 25px;
+  }
+  .mainpic {
+    width: 300px;
+  }
+  .mainlogo {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .error404 {
+    width: 300px;
+  }
+}

@@ -1,0 +1,50 @@
+body {
+  color: #4B0082;
+  background: #E6E6FA;
+}
+.error500 {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Times New Roman;
+}
+.error500 h1 {
+  font-size: 40px;
+  margin-left: 55px;
+}
+.error500 a {
+  font-size: 30px;
+  color: #4B0082;
+}
+.error500 a:hover {
+  color: #DA70D6;
+}
+.mainlogo {
+  width: 200px;
+}
+.mainpic {
+  width: 600px;
+}
+@media screen and (max-width: 480px) {
+  .error500 {
+    width: 350px;
+  }
+  .error500 h1 {
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .error500 a {
+    font-size: 25px;
+  }
+  .mainpic {
+    width: 300px;
+  }
+  .mainlogo {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .error500 {
+    width: 300px;
+  }
+}

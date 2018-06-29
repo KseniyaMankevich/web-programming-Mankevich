@@ -1,0 +1,55 @@
+@text-color: #4B0082;
+@background-color: #E6E6FA;
+@hover-color: #DA70D6;
+@main-size:30px;
+@w:200px;
+body {
+	color: @text-color;
+	background: @background-color;
+}
+.error404 {
+	width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Times New Roman;
+	h1 {
+		font-size: @main-size+10px;
+		margin-left: @main-size+25px;
+	}
+	a {
+		font-size: @main-size;
+		color: @text-color;
+		&:hover {
+			color: @hover-color;
+		}
+	}
+}
+.mainlogo {
+	width: @w;
+}
+.mainpic {
+	width: 600px;
+}
+@media screen and (max-width: 480px) {
+	.error404 {
+		width: @w+150px;
+		h1 {
+			font-size: @main-size;
+			margin-left: 0;
+		}
+		a {
+			font-size: 25px;
+		}
+	}
+	.mainpic {
+		width: @w+100px;
+	}
+	.mainlogo {
+		width: @w;
+	}
+}
+@media screen and (max-width: 360px) {
+	.error404 {
+		width: @w+100px;
+	}
+}

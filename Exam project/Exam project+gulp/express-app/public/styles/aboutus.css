@@ -1,0 +1,292 @@
+body {
+  width: 100%;
+  color: black;
+  background: #E6E6FA;
+}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+}
+.shortinfo {
+  text-align: center;
+}
+.log {
+  width: 70%;
+}
+.call {
+  width: 40%;
+  float: left;
+  margin-top: 50px;
+}
+.openhours {
+  float: right;
+  width: 45%;
+  margin-right: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.top {
+  width: 50px;
+}
+.topbutton {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+#menu {
+  width: 100%;
+  background-color: #d8bfd8;
+  border-radius: 6px;
+  display: table;
+  margin-top: 10px;
+}
+#menu li {
+  display: block;
+  float: left;
+  position: relative;
+}
+#menu li a {
+  display: table;
+  padding: 0 64px;
+  text-align: center;
+  font: 15px/50px arial;
+  color: black;
+  text-decoration: none;
+}
+#menu li a:hover + .sub-menu {
+  display: block;
+}
+#menu li:hover a {
+  color: #C71585;
+}
+#menu li:hover > ul {
+  opacity: 1;
+}
+#menu li:hover .sub-menu a {
+  background-color: #BC8F8F;
+  color: black;
+}
+#menu li:hover .sub-menu a:hover {
+  background-color: #DDA0DD;
+}
+#menu .sub-menu li {
+  float: none;
+}
+#menu .sub-menu li a {
+  min-width: 100%;
+  padding: 0 11px;
+  text-align: center;
+}
+.sub-menu {
+  opacity: 0;
+  position: absolute;
+}
+.sub-menu:hover {
+  display: block;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.content {
+  margin: 20px auto 0;
+  width: 100%;
+  color: #4b0082;
+}
+.history div {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 28px;
+}
+.history h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.history p {
+  margin: 5px;
+}
+div.history {
+  font-size: 0;
+}
+.past {
+  width: 30%;
+}
+.past p {
+  font-size: 28px;
+}
+.present {
+  background: #d8bfd8;
+  width: 40%;
+}
+.nowpic {
+  text-align: center;
+}
+.now {
+  width: 90%;
+  margin-top: 15px;
+}
+.future {
+  width: 30%;
+}
+.future p {
+  font-size: 29px;
+}
+.futurepic {
+  text-align: center;
+}
+.futurebakery {
+  width: 90%;
+  height: 2 20px;
+}
+.pastbakery {
+  width: 90%;
+  margin-top: 13px;
+  height: 2 20px;
+}
+.pastpic {
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #d8bfd8;
+  border-top: 1px solid #8A2BE2;
+  color: #191970;
+}
+.follow {
+  width: 30%;
+  height: 320px;
+  float: left;
+  background-color: #d8bfd8;
+}
+.follow p {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 80px;
+}
+.add {
+  height: 45px;
+  margin: 20px 10px;
+}
+.mapinfo {
+  width: 40%;
+  background-color: #d8bfd8;
+  height: 320px;
+  float: left;
+}
+.map {
+  width: 90%;
+  height: 300px;
+  border: 0;
+  margin: 10px 20px;
+}
+.contactus {
+  width: 30%;
+  height: 320px;
+  float: left;
+  background-color: #d8bfd8;
+}
+.contactinfo {
+  margin-left: 25px;
+  margin-top: 50px;
+}
+.contactinfo p {
+  font-size: 18px;
+  padding-top: 7px;
+  font-family: Times New Roman;
+}
+.contactinfo p span {
+  color: black;
+}
+@media screen and (max-width: 1020px) {
+  #menu li a {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .log {
+    margin-bottom: 15px;
+  }
+  .sub-menu {
+    position: static;
+    display: none;
+  }
+  #menu {
+    width: 100%;
+  }
+  #menu li {
+    width: 100%;
+    padding: 0px;
+  }
+  #menu li a {
+    width: 100%;
+    padding: 0px;
+  }
+  #menu .sub-menu li a {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    width: 320px;
+  }
+  .topbutton {
+    right: 20px;
+  }
+  .call {
+    visibility: hidden;
+    display: none;
+  }
+  .openhours {
+    visibility: hidden;
+    display: none;
+  }
+  .present {
+    width: 100%;
+  }
+  .past {
+    width: 100%;
+  }
+  .future {
+    width: 100%;
+  }
+  .follow {
+    width: 100%;
+    float: none;
+    height: 200px;
+  }
+  .follow p {
+    margin-top: 40px;
+  }
+  .mapinfo {
+    height: 3 50px;
+    width: 100%;
+    float: none;
+  }
+  .contactus {
+    width: 100%;
+    float: none;
+    height: 240px;
+  }
+  .add {
+    margin: 20px 15px;
+  }
+  .map {
+    margin: 10px 16px;
+  }
+  .contactinfo {
+    margin-top: 25px;
+  }
+  .contactinfo p {
+    text-align: center;
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,324 @@
+@mainfontcolor: black;
+@menuhover: #C71585;
+@contentcolor: #4b0082;
+@footerfontcolor: #191970;
+@contactfont: Times New Roman;
+@menubackground: #d8bfd8;
+@submenucolor: #BC8F8F;
+@hovercolor: #DDA0DD;
+@mainwidth:100%;
+@max-width: 1024px;
+@mainmargin:50px;
+@margintop:20px;
+
+
+body {
+	width: @mainwidth;
+	color: @mainfontcolor;
+	background: #E6E6FA;
+}
+.wrapper {
+	max-width: @max-width;
+	margin: 0 auto;
+}
+.header {
+	width: @mainwidth;
+}
+.shortinfo {
+	text-align: center;
+}
+.log {
+	width: 70%;
+}
+.call {
+	width: 40%;
+	float: left;
+	margin-top: @mainmargin;
+}
+.openhours {
+	float: right;
+	width: 45%;
+	margin-right: 10px;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.top {
+	width: @mainmargin;
+}
+.topbutton {
+	position: fixed;
+	bottom: @mainmargin;
+	right: @mainmargin;
+}
+#menu {
+	width: @mainwidth;
+	background-color: @menubackground;
+	border-radius: 6px;
+	display: table;
+	margin-top: 10px;
+	li {
+		display: block;
+		float: left;
+		position: relative;
+		a {
+			display: table;
+			padding: 0 64px;
+			text-align: center;
+			font: 15px/@mainmargin arial;
+			color: @mainfontcolor;
+			text-decoration: none;
+			&:hover {
+				&+.sub-menu {
+					display: block;
+				}
+			}
+		}
+		&:hover {
+			a {
+				color: @menuhover;
+			}
+			>ul {
+				opacity: 1;
+			}
+			.sub-menu {
+				a {
+					background-color: @submenucolor;
+					color: @mainfontcolor;
+					&:hover {
+						background-color: @hovercolor;
+					}
+				}
+			}
+		}
+	}
+	.sub-menu {
+		li {
+			float: none;
+			a {
+				min-width: @mainwidth;
+				padding: 0 11px;
+				text-align: center;
+			}
+		}
+	}
+}
+.sub-menu {
+	opacity: 0;
+	position: absolute;
+	&:hover {
+		display: block;
+	}
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: @margintop;
+}
+.content {
+	margin: @margintop auto 0;
+	width: @mainwidth;
+	color: @contentcolor;
+}
+.history {
+	div {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 28px;
+	}
+	h2 {
+		text-align: center;
+		text-decoration: underline;
+	}
+	p {
+		margin: 5px;
+	}
+}
+div.history {
+	font-size: 0;
+}
+.past {
+	width: 30%;
+	p {
+		font-size: 28px;
+	}
+}
+.present {
+	background: #d8bfd8;
+	width: 40%;
+}
+.nowpic {
+	text-align: center;
+}
+.now {
+	width: 90%;
+	margin-top: 15px;
+}
+.future {
+	width: 30%;
+	p {
+		font-size: 29px;
+	}
+}
+.futurepic {
+	text-align: center;
+}
+.futurebakery {
+	width: 90%;
+	height: 2@margintop;
+}
+.pastbakery {
+	width: 90%;
+	margin-top: 13px;
+	height: 2@margintop;
+}
+.pastpic {
+	text-align: center;
+}
+.footer {
+	width: @mainwidth;
+	margin: 0 auto;
+	margin-top: 40px;
+	background-color: @menubackground;
+	border-top: 1px solid #8A2BE2;
+	color: @footerfontcolor;
+}
+.follow {
+	width: 30%;
+	height: 320px;
+	float: left;
+	background-color: @menubackground;
+	p {
+		font-size: 30px;
+		text-align: center;
+		margin-top: 80px;
+	}
+}
+.add {
+	height: 45px;
+	margin: @margintop 10px;
+}
+.mapinfo {
+	width: 40%;
+	background-color: @menubackground;
+	height: 320px;
+	float: left;
+}
+.map {
+	width: 90%;
+	height: 300px;
+	border: 0;
+	margin: 10px @margintop;
+}
+.contactus {
+	width: 30%;
+	height: 320px;
+	float: left;
+	background-color: @menubackground;
+}
+.contactinfo {
+	margin-left: 25px;
+	margin-top: @mainmargin;
+	p {
+		font-size: 18px;
+		padding-top: 7px;
+		font-family: @contactfont;
+		span {
+			color: @mainfontcolor;
+		}
+	}
+}
+@media screen and (max-width: 1020px) {
+	#menu {
+		li {
+			a {
+				padding: 0 40px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.log {
+		margin-bottom: 15px;
+	}
+	.sub-menu {
+		position: static;
+		display: none;
+	}
+	#menu {
+		li {
+			width: @mainwidth;
+			padding: 0px;
+			a {
+				width: @mainwidth;
+				padding: 0px;
+			}
+		}
+		.sub-menu {
+			li {
+				a {
+					padding: 0px;
+				}
+			}
+		}
+		width: @mainwidth;
+	}
+}
+@media screen and (max-width: 480px) {
+	.wrapper{
+		width: 320px;
+	}
+	.topbutton {
+		right: @margintop;
+	}
+	.call {
+		visibility: hidden;
+		display: none;
+	}
+	.openhours {
+		visibility: hidden;
+		display: none;
+	}
+	.present {
+		width: @mainwidth;
+	}
+	.past {
+		width: @mainwidth;
+	}
+	.future {
+		width: @mainwidth;
+	}
+	.follow {
+		width: @mainwidth;
+		float: none;
+		height: 200px;
+		p {
+			margin-top: 40px;
+		}
+	}
+	.mapinfo {
+		height: 3@mainmargin;
+		width: @mainwidth;
+		float: none;
+	}
+	.contactus {
+		width: @mainwidth;
+		float: none;
+		height: 240px;
+	}
+	.add {
+		margin: @margintop 15px;
+	}
+	.map {
+		margin: 10px 16px;
+	}
+	.contactinfo {
+		margin-top: 25px;
+		p {
+			text-align: center;
+			font-size: 23px;
+		}
+	}
+}

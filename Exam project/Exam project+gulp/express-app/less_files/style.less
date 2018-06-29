@@ -1,0 +1,457 @@
+@fontarticle: Georgia;
+@contactfont: Times New Roman;
+@mainfontcolor: black;
+@datecolor: #8A2BE2;
+@footerfontcolor: #191970;
+@menubackground: #d8bfd8;
+@submenucolor: #BC8F8F;
+@bodybackground:#E6E6FA;
+@h2color: #3f3f3f;
+@toppostscolor: #4B0082;
+@hovercolor: #DDA0DD;
+@mainwidth:100%;
+@max-width: 1024px;
+@mainmargin:50px;
+@margintop:20px;
+
+
+body {
+	width: @mainwidth;
+	color: @mainfontcolor;
+	background: @bodybackground;
+}
+.wrapper {
+	max-width: @max-width;
+	margin: 0 auto;
+}
+.header {
+	width: @mainwidth;
+}
+.shortinfo {
+	text-align: center;
+}
+.log {
+	width: 70%;
+}
+.call {
+	width: 40%;
+	float: left;
+	margin-top: @mainmargin;
+}
+.openhours {
+	float: right;
+	width: 45%;
+	margin-right: 10px;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.top {
+	width: @mainmargin;
+}
+.topbutton {
+	position: fixed;
+	bottom: @mainmargin;
+	right: @mainmargin;
+}
+.sub-menu {
+	opacity: 0;
+	position: absolute;
+	&:hover {
+		display: block;
+	}
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: @margintop;
+}
+.variety {
+	float: right;
+	padding: 10px;
+	height: 30%;
+	width: 30%;
+	&:hover {
+		transform: scale(1.4);
+		box-shadow: inset 0 0 0 25px #DA70D6;
+	}
+}
+.varietyofcakes {
+	float: right;
+	padding: 10px;
+	height: 30%;
+	width: 30%;
+	&:hover {
+		transform: scale(1.4);
+		box-shadow: inset 0 0 0 25px #DA70D6;
+	}
+}
+.content {
+	margin: @margintop auto 0;
+	width: @mainwidth;
+}
+.mainbar {
+	float: left;
+	width: 70%;
+	background: #e8d8ee;
+	border-radius: 6px;
+	h2 {
+		margin: 15px;
+		font-size: 30px;
+		color: @h2color;
+		border-bottom: 1px solid black;
+	}
+}
+.workpic {
+	width: 35%;
+	height: 185px;
+	margin-left: @margintop+10px;
+	margin-top: @margintop+15px;
+}
+.advertising {
+	float: right;
+	width: 60%;
+	p {
+		font-size: @margintop;
+		font-family: @fontarticle;
+		margin: 15px 15px @margintop 10px;
+	}
+}
+.clr {
+	clear: both;
+}
+.news {
+	width: 50%;
+	p {
+		font-family: @fontarticle;
+		margin: 15px 15px @margintop 15px;
+	}
+}
+.postproduction {
+	width: 90%;
+	margin-left: 5px;
+}
+.postbakery {
+	width: 90%;
+	margin-left: 15px;
+}
+
+.sidebar {
+	float: right;
+	width: 28%;
+	h2 {
+		color: @h2color;
+		font-family: @fontarticle;
+		font-size: @margintop;
+		margin-left: 5px;
+		margin-top: 15px;
+	}
+	h3 {
+		color: @h2color;
+		font-family: @fontarticle;
+		font-size: 17px;
+		margin-top: 18px;
+		margin-bottom: 18px;
+	}
+	h5 {
+		color: @h2color;
+		font-family: @fontarticle;
+		font-size: @margintop+3px;
+		margin-top: @margintop+5px;
+		margin-left: 3px;
+	}
+}
+.newbakery {
+	width: @mainwidth;
+	height: 230px;
+}
+.sharebuttons {
+	text-align: center;
+	text-align: center;
+}
+.share {
+	width: 40%;
+	margin-top: 10px;
+}
+.apppicture {
+	width: @mainwidth;
+	margin-top: @margintop;
+}
+.topposts {
+	h4 {
+		color: @toppostscolor;
+		text-align: center;
+		margin-top: @margintop;
+		font-size: @margintop+5px;
+	}
+	p {
+		color: @toppostscolor;
+		margin-top: 12px;
+		font-size: @margintop;
+	}
+	a {
+		color: @toppostscolor;
+	}
+	&:hover {
+		color: #DA70D6;
+	}
+}
+.date {
+	color: @datecolor;
+	margin-top: 10px;
+	font-size: 15px;
+}
+.footer {
+	width: @mainwidth;
+	margin: 0 auto;
+	margin-top: @margintop+20px;
+	background-color: @menubackground;
+	border-top: 1px solid #8A2BE2;
+	color: @footerfontcolor;
+}
+.follow {
+	width: 30%;
+	height: 320px;
+	float: left;
+	background-color: @menubackground;
+	p {
+		font-size: 30px;
+		text-align: center;
+		margin-top: 80px;
+	}
+}
+.add {
+	height: @margintop+25px;
+	margin: @margintop 10px;
+}
+.mapinfo {
+	width: 40%;
+	background-color: @menubackground;
+	height: 320px;
+	float: left;
+}
+.map {
+	width: 90%;
+	height: 300px;
+	border: 0;
+	margin: 10px @margintop;
+}
+.contactus {
+	width: 30%;
+	height: 320px;
+	float: left;
+	background-color: @menubackground;
+}
+#menu {
+	width: @mainwidth;
+	background-color: @menubackground;
+	border-radius: 6px;
+	display: table;
+	margin-top: 10px;
+	li {
+		display: block;
+		float: left;
+		position: relative;
+		a {
+			display: table;
+			padding: 0 64px;
+			text-align: center;
+			font: 15px/@mainmargin arial;
+			color: @mainfontcolor;
+			text-decoration: none;
+			&:hover {
+				&+.sub-menu {
+					display: block;
+				}
+			}
+		}
+		&:hover {
+			a {
+				color: #C71585;
+			}
+			>ul {
+				opacity: 1;
+			}
+			.sub-menu {
+				a {
+					background-color: @submenucolor;
+					color: @mainfontcolor;
+					&:hover {
+						background-color: @hovercolor;
+					}
+				}
+			}
+		}
+	}
+}
+.sub-menu {
+		li {
+			float: none;
+			a {
+				min-width: @mainwidth;
+				padding: 0 11px;
+				text-align: center;
+			}
+		}
+	}
+.contactinfo {
+	margin-left: 25px;
+	margin-top: @mainmargin;
+	p {
+		font-size: 18px;
+		padding-top: 7px;
+		font-family: @contactfont;
+		span {
+			color: @mainfontcolor;
+		}
+	}
+}
+@media screen and (max-width: 1020 px) {
+	.advertising {
+		width: 55%;
+	}
+	#menu {
+		li {
+			a {
+				padding: 0 40px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.contactinfo {
+		p {
+			font-size: 11px;
+			padding-top: 7px;
+			font-family: @contactfont;
+		}
+		margin-left: 8px;
+	}
+	.add {
+		height: @margintop+25px;
+		margin: @margintop 2px;
+	}
+	.log {
+		margin-bottom: 15px;
+	}
+	.sub-menu {
+		position: static;
+		display: none;
+	}
+	#menu {
+		li {
+			width: @mainwidth;
+			padding: 0px;
+			a {
+				width: @mainwidth;
+				padding: 0px;
+			}
+		}
+		.sub-menu {
+			li {
+				a {
+					padding: 0px;
+				}
+			}
+		}
+		width: @mainwidth;
+	}
+}
+@media screen and (max-width: 480px) {
+	.wrapper{
+		width: 320px;
+	}
+	.variety {
+		width: 45%;
+		padding: 8px;
+	}
+	.varietyofcakes {
+		visibility: hidden;
+		display: none;
+	}
+	.topbutton {
+		right: @margintop;
+	}
+	.call {
+		visibility: hidden;
+		display: none;
+	}
+	.openhours {
+		visibility: hidden;
+		display: none;
+	}
+	.mainbar {
+		width: @mainwidth;
+		margin-bottom: 15px;
+		h2 {
+			font-size: @margintop;
+		}
+	}
+	.news {
+		p {
+			margin: 15px 10px 15px 10px;
+			font-size: 15px;
+		}
+	}
+	.workpic {
+		width: 80%;
+		margin-top: 15px;
+	}
+	.advertising {
+		width: @mainwidth;
+	}
+	.postbakery {
+		width: 80%;
+	}
+	.postproduction {
+		width: 80%;
+		margin-left: 13px;
+	}
+	.sidebar {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+		h2 {
+			text-align: center;
+		}
+		h3 {
+			text-align: center;
+		}
+		h5 {
+			text-align: center;
+		}
+	}
+	.follow {
+		width: @mainwidth;
+		float: none;
+		height: 200px;
+		p {
+			margin-top: @margintop+20px;
+		}
+	}
+	.mapinfo {
+		height: 320px;
+		width: @mainwidth;
+		float: none;
+	}
+	.contactus {
+		width: @mainwidth;
+		float: none;
+		height: 240px;
+	}
+	.add {
+		margin: @margintop 15px;
+	}
+	.map {
+		margin: 10px 16px;
+	}
+	.contactinfo {
+		margin-top: @margintop+5px;
+		p {
+			text-align: center;
+			font-size: @margintop+3px;
+		}
+	}
+}
